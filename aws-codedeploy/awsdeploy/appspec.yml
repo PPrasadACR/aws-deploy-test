@@ -1,0 +1,23 @@
+--- 
+files: 
+  - 
+    destination: /home/ubuntu/webapp/
+    source: /
+hooks: 
+  BeforeInstall: 
+    - 
+      location: /install-deps.sh
+      timeout: 5000
+      runas: root      
+  AfterInstall: 
+    - 
+      location: /after-install.sh
+      timeout: 900
+      runas: root 
+  ApplicationStart:
+    - 
+      location: /app-start.sh
+      timeout: 900
+      runas: root   
+os: linux
+version: 0.0

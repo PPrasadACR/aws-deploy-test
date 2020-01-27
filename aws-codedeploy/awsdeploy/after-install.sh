@@ -1,0 +1,1 @@
+snap alias dotnet-sdk.dotnet dotnet

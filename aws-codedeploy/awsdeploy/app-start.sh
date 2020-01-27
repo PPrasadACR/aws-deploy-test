@@ -1,0 +1,1 @@
+/snap/bin/dotnet /home/ubuntu/webapp/webapp.dll
